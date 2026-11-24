@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mncedisi Mbhamali, Civil Engineer</title>
+<meta name="description" content="Mncedisi Mbhamali, civil engineer in Eswatini: earth dams, potable water, irrigation and buildings, from feasibility to handover.">
+<meta property="og:title" content="Mncedisi Mbhamali, Civil Engineer">
+<meta property="og:description" content="Water and irrigation infrastructure in Eswatini, from feasibility to handover.">
+<meta name="theme-color" content="#051F20">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23051F20'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23A9CF6B' stroke-width='3' stroke-dasharray='40 17'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-200-normal.woff2) format("woff2");font-weight:200;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-300-normal.woff2) format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+
+:root{
+  /* palette */
+  --g900:#051F20; --g800:#0B2B26; --g700:#163832; --g600:#235347;
+  --g300:#8EB69B; --g100:#DAF1DE;
+  --leaf:#A9CF6B;           /* field green from the farming references */
+  --paper:#F1F7F2;          /* light section ground, a whisper of #DAF1DE */
+  --ink:#0B2B26;
+  --muted-d:rgba(218,241,222,.66);   /* secondary text on dark */
+  --muted-l:#4A6B5E;                 /* secondary text on light */
+  --glass:rgba(35,83,71,.32); --glass-line:rgba(218,241,222,.13);
+  --font:"Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0; background:var(--g900); color:var(--g100); font:400 17px/1.6 var(--font); -webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--leaf); outline-offset:3px}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 28px}
+.skip{position:absolute; left:-999px}
+.skip:focus{left:16px; top:16px; z-index:50; background:var(--g100); color:var(--g900); padding:8px 14px; border-radius:99px}
+.num{font-variant-numeric:tabular-nums lining-nums}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex; align-items:center; gap:10px; height:48px; padding:0 24px; border-radius:99px;
+  font:500 16px/1 var(--font); text-decoration:none; border:1px solid transparent; cursor:pointer; transition:background .25s, color .25s, border-color .25s, transform .25s var(--ease)}
+.btn-leaf{background:var(--leaf); color:var(--g900)}
+.btn-leaf:hover{background:#BCDD86}
+.btn-ghost{border-color:rgba(218,241,222,.28); color:var(--g100); background:transparent}
+.btn-ghost:hover{border-color:var(--g100)}
+.btn:active{transform:scale(.98)}
+
+/* ---------- nav ---------- */
+.nav{position:absolute; top:0; left:0; right:0; z-index:10}
+.nav .wrap{display:flex; align-items:center; justify-content:space-between; height:84px}
+.brand{font-weight:600; font-size:18px; text-decoration:none; letter-spacing:-.01em}
+.nav ul{display:flex; gap:32px; list-style:none; margin:0; padding:0; font-size:15px}
+.nav ul a{text-decoration:none; color:var(--muted-d)}
+.nav ul a:hover{color:var(--g100)}
+.nav .btn{height:40px; padding:0 18px; font-size:15px}
+@media (max-width:860px){ .nav ul{display:none} }
+
+/* ---------- hero ---------- */
+.hero{position:relative; overflow:hidden; padding:150px 0 90px; isolation:isolate}
+.hero::before{ /* soft field light, like the references' blurred backdrops */
+  content:""; position:absolute; inset:-20% -10% auto auto; width:900px; height:900px; z-index:-1;
+  background:radial-gradient(closest-side, rgba(35,83,71,.85), rgba(22,56,50,.4) 55%, transparent);
+  filter:blur(20px);
+}
+.hero::after{
+  content:""; position:absolute; left:-200px; bottom:-300px; width:700px; height:700px; z-index:-1;
+  background:radial-gradient(closest-side, rgba(169,207,107,.12), transparent); filter:blur(30px);
+}
+.hero-grid{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.08fr); gap:56px; align-items:center}
+.kicker{display:flex; align-items:center; gap:14px; color:var(--muted-d); font-size:16px; margin:0 0 22px}
+.kicker::before{content:""; width:36px; height:2px; background:var(--leaf); border-radius:2px}
+h1{font-weight:300; font-size:clamp(48px,6.4vw,84px); line-height:1; letter-spacing:-.035em; margin:0}
+h1 b{display:block; font-weight:600}
+.hero-text{font-size:19px; line-height:1.6; color:var(--muted-d); max-width:44ch; margin:28px 0 34px}
+.hero-actions{display:flex; gap:12px; flex-wrap:wrap}
+
+/* hectare ring */
+.field{position:relative; aspect-ratio:1/0.96; width:100%; max-width:600px; justify-self:end}
+.ring{position:absolute; left:52%; top:50%; width:62%; transform:translate(-50%,-50%)}
+.ring svg{display:block; width:100%; height:auto; overflow:visible}
+.ring .seg{fill:none; stroke-width:13; stroke-linecap:butt; transition:opacity .3s, stroke-width .3s var(--ease)}
+.ring.dim .seg{opacity:.28}
+.ring.dim .seg.on{opacity:1; stroke-width:17}
+.ring-core{position:absolute; inset:17%; border-radius:50%;
+  background:radial-gradient(circle at 40% 35%, rgba(142,182,155,.28), rgba(22,56,50,.65) 60%, rgba(11,43,38,.9));
+  box-shadow:inset 0 0 0 1px var(--glass-line), 0 30px 60px -20px rgba(0,0,0,.5);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center}
+.ring-core .big{font-weight:200; font-size:clamp(42px,4.8vw,64px); line-height:1; letter-spacing:-.04em}
+.ring-core .unit{font-size:16px; color:var(--muted-d); margin-top:8px; max-width:15ch; line-height:1.35}
+
+.chip{position:absolute; width:min(34%,176px); text-align:left; cursor:pointer; color:var(--g100); font:inherit;
+  padding:12px 14px; border-radius:16px; background:var(--glass); border:1px solid var(--glass-line);
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  transition:transform .35s var(--ease), border-color .3s, background .3s}
+.chip:hover,.chip:focus-visible{transform:translateY(-3px); border-color:rgba(169,207,107,.55); background:rgba(35,83,71,.5)}
+.chip-top{display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:13px; color:var(--muted-d)}
+.chip-top i{width:9px; height:9px; border-radius:50%; flex:none}
+.chip-v{display:flex; align-items:baseline; gap:6px; margin-top:6px}
+.chip-v strong{font-weight:300; font-size:28px; letter-spacing:-.03em; line-height:1}
+.chip-v span{font-size:14px; color:var(--muted-d)}
+.chip-s{font-size:13px; color:var(--muted-d); margin-top:4px}
+.c1{left:2%; top:4%} .c2{right:0; top:10%} .c3{left:-4%; top:42%} .c4{left:6%; bottom:4%} .c5{right:-2%; bottom:14%}
+.field-note{position:absolute; right:0; bottom:-34px; font-size:13px; color:var(--muted-d); margin:0}
+
+@media (max-width:1000px){
+  .hero-grid{grid-template-columns:1fr}
+  .field{justify-self:stretch; max-width:none; aspect-ratio:auto; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+  .ring{position:relative; left:auto; top:auto; transform:none; width:min(78%,360px); margin:0 auto 14px; grid-column:1/-1}
+  .chip{position:static; width:auto}
+  .c5{grid-column:1/-1}
+  .field-note{position:static; grid-column:1/-1}
+}
+
+/* figures strip */
+.figures{margin-top:84px; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid var(--glass-line)}
+.figures div{padding:22px 24px 0 0}
+.figures div + div{padding-left:24px; border-left:1px solid var(--glass-line)}
+.figures strong{display:block; font-weight:200; font-size:clamp(38px,4vw,54px); line-height:1; letter-spacing:-.035em}
+.figures strong small{font-size:.5em; font-weight:300; letter-spacing:0; color:var(--muted-d); margin-right:2px}
+.figures > div > span{display:block; margin-top:10px; font-size:15px; color:var(--muted-d); max-width:22ch; line-height:1.4}
+@media (max-width:760px){
+  .figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .figures div:nth-child(n){padding:20px 14px 20px 0; border-left:0}
+  .figures div:nth-child(2n){padding-left:16px; border-left:1px solid var(--glass-line)}
+  .figures div:nth-child(n+3){border-top:1px solid var(--glass-line)}
+}
+
+/* ---------- section scaffolding ---------- */
+section{padding:110px 0}
+.sec-title{font-weight:300; font-size:clamp(34px,4vw,48px); line-height:1.08; letter-spacing:-.03em; margin:0}
+.sec-title b{font-weight:600}
+.sec-intro{max-width:58ch; margin:16px 0 0; font-size:18px}
+.light{background:var(--paper); color:var(--ink); border-radius:44px 44px 0 0; padding-bottom:154px}
+.light .sec-intro{color:var(--muted-l)}
+.light + .dark{margin-top:-44px; border-radius:44px 44px 0 0; background:var(--g900); position:relative}
+
+/* about */
+.about-grid{display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:64px; align-items:start}
+.about-grid p{margin:0 0 18px; font-size:18px; max-width:62ch}
+.about-grid p:first-child{font-size:21px; line-height:1.55; color:var(--ink)}
+.about-grid p:not(:first-child){color:var(--muted-l)}
+.badges{display:flex; flex-wrap:wrap; gap:8px; margin-top:28px}
+.badges span{padding:8px 14px; border-radius:99px; background:#fff; border:1px solid #D3E6D8; font-size:14px; color:var(--ink)}
+@media (max-width:860px){ .about-grid{grid-template-columns:1fr; gap:24px} }
+
+/* projects */
+.proj-head{display:flex; justify-content:space-between; align-items:end; gap:24px; flex-wrap:wrap; margin-top:72px}
+.filters{display:flex; flex-wrap:wrap; gap:8px}
+.filters button{height:40px; padding:0 16px; border-radius:99px; border:1px solid #CFE3D4; background:#fff; color:var(--ink);
+  font:500 15px/1 var(--font); cursor:pointer; transition:background .25s, color .25s, border-color .25s}
+.filters button:hover{border-color:var(--g600)}
+.filters button[aria-pressed="true"]{background:var(--g800); border-color:var(--g800); color:var(--g100)}
+.filters button em{font-style:normal; opacity:.6; margin-left:6px}
+.legend{display:flex; gap:18px; font-size:14px; color:var(--muted-l)}
+.legend span{display:inline-flex; align-items:center; gap:8px}
+.legend i{width:12px; height:12px; border-radius:4px}
+.org-filter{display:none; align-items:center; gap:10px; margin-top:16px; font-size:15px; color:var(--muted-l)}
+.org-filter.show{display:flex}
+.org-filter button{border:0; background:var(--g100); color:var(--ink); border-radius:99px; padding:6px 12px; font:500 14px var(--font); cursor:pointer}
+
+.grid{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin-top:28px}
+.card{position:relative; text-align:left; font:inherit; cursor:pointer; border:1px solid #DCEBDF; background:#fff; color:var(--ink);
+  border-radius:24px; padding:22px 22px 20px; display:flex; flex-direction:column; min-height:236px;
+  box-shadow:0 1px 0 rgba(11,43,38,.03), 0 18px 40px -28px rgba(11,43,38,.35);
+  transition:transform .4s var(--ease), box-shadow .4s var(--ease), opacity .35s, border-color .3s}
+.card:hover,.card:focus-visible{transform:translateY(-4px); box-shadow:0 1px 0 rgba(11,43,38,.03), 0 26px 50px -26px rgba(11,43,38,.5)}
+.card.live{background:linear-gradient(160deg,var(--g700),var(--g800) 70%); border-color:var(--g700); color:var(--g100)}
+.card-top{display:flex; justify-content:space-between; align-items:center; gap:8px; font-size:13px; color:var(--muted-l)}
+.card.live .card-top{color:var(--muted-d)}
+.status{padding:4px 10px; border-radius:99px; font-size:12px; font-weight:500; background:#E6F1E8; color:var(--g600)}
+.card.live .status{background:var(--leaf); color:var(--g900)}
+.card-v{margin-top:auto; padding-top:26px; display:flex; align-items:baseline; gap:6px}
+.card-v strong{font-weight:300; font-size:40px; line-height:1; letter-spacing:-.035em}
+.card-v span{font-size:14px; color:var(--muted-l)}
+.card-v .pre{font-size:22px; font-weight:300; margin-right:-2px}
+.card.live .card-v span{color:var(--muted-d)}
+.card h3{font-size:18px; font-weight:600; line-height:1.25; letter-spacing:-.01em; margin:12px 0 4px}
+.card .role{font-size:14px; color:var(--muted-l); margin:0}
+.card.live .role{color:var(--muted-d)}
+.card .more{position:absolute; right:18px; bottom:18px; width:34px; height:34px; border-radius:50%; border:1px solid #CFE3D4;
+  display:grid; place-items:center; transition:background .3s, border-color .3s, transform .4s var(--ease)}
+.card.live .more{border-color:rgba(218,241,222,.25)}
+.card:hover .more{background:var(--leaf); border-color:var(--leaf); transform:rotate(90deg)}
+.card:hover .more svg{stroke:var(--g900)}
+.card .more svg{width:14px; height:14px; stroke:currentColor; stroke-width:1.8; fill:none}
+.card h3, .card .role{padding-right:40px}
+.card.hide{display:none}
+.js .card.enter{animation:cardIn .5s var(--ease) both; animation-delay:var(--d,0s)}
+@keyframes cardIn{from{opacity:0; transform:translateY(10px)}}
+@media (max-width:980px){ .grid{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:620px){ .grid{grid-template-columns:1fr} .card{min-height:0} }
+
+/* project dialog */
+dialog{border:0; padding:0; width:min(640px,calc(100vw - 32px)); max-height:calc(100vh - 48px); border-radius:28px;
+  background:var(--g800); color:var(--g100); box-shadow:0 40px 120px -20px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(5,31,32,.62); backdrop-filter:blur(6px)}
+dialog[open]{animation:dlgIn .4s var(--ease)}
+dialog[open]::backdrop{animation:fade .4s ease}
+@keyframes dlgIn{from{opacity:0; transform:translateY(16px) scale(.98)}}
+@keyframes fade{from{opacity:0}}
+.dlg{padding:30px 32px 32px}
+.dlg-top{display:flex; justify-content:space-between; align-items:center; gap:12px; font-size:14px; color:var(--muted-d)}
+.dlg-top .status{background:rgba(218,241,222,.12); color:var(--g100)}
+.dlg-top .status.live{background:var(--leaf); color:var(--g900)}
+.dlg h2{font-weight:600; font-size:28px; line-height:1.15; letter-spacing:-.02em; margin:16px 0 6px}
+.dlg .who{color:var(--muted-d); margin:0}
+.dlg dl{display:flex; flex-wrap:wrap; gap:1px; margin:24px 0; background:var(--glass-line); border-radius:16px; overflow:hidden}
+.dlg dl div{background:var(--g800); padding:14px 16px; flex:1 1 150px}
+.dlg dl div:first-child{background:rgba(35,83,71,.45); flex-basis:100%}
+.dlg dt{font-size:13px; color:var(--muted-d)}
+.dlg dd{margin:4px 0 0; font-size:17px; font-weight:500}
+.dlg dd.big{font-weight:300; font-size:30px; letter-spacing:-.03em; line-height:1.1}
+.dlg ul{margin:0; padding:0; list-style:none}
+.dlg li{position:relative; padding:0 0 10px 22px; color:rgba(218,241,222,.86)}
+.dlg li::before{content:""; position:absolute; left:2px; top:.65em; width:8px; height:8px; border-radius:50%; border:2px solid var(--leaf)}
+.dlg-close{position:absolute; top:22px; right:22px; width:40px; height:40px; border-radius:50%; border:1px solid var(--glass-line);
+  background:transparent; color:var(--g100); cursor:pointer; display:grid; place-items:center; transition:background .25s}
+.dlg-close:hover{background:rgba(218,241,222,.1)}
+.dlg-close svg{width:14px; height:14px; stroke:currentColor; stroke-width:1.8}
+.dlg .top-pad{padding-right:48px}
+.dlg-nav{display:flex; justify-content:space-between; gap:12px; margin-top:20px; padding-top:20px; border-top:1px solid var(--glass-line)}
+.dlg-nav button{background:none; border:0; color:var(--muted-d); font:500 15px var(--font); cursor:pointer; padding:6px 0}
+.dlg-nav button:hover{color:var(--g100)}
+
+/* experience */
+.xp{margin-top:56px; display:grid; gap:12px}
+.xp button{width:100%; text-align:left; font:inherit; color:inherit; cursor:pointer;
+  display:grid; grid-template-columns:170px minmax(0,1fr) auto; gap:28px; align-items:center;
+  padding:24px 26px; border-radius:22px; background:rgba(22,56,50,.45); border:1px solid var(--glass-line);
+  transition:background .3s, border-color .3s, transform .4s var(--ease)}
+.xp button:hover,.xp button:focus-visible{background:rgba(35,83,71,.55); border-color:rgba(169,207,107,.45)}
+.xp .when{font-size:15px; color:var(--muted-d)}
+.xp h3{font-size:20px; font-weight:600; letter-spacing:-.01em; margin:0}
+.xp .where{color:var(--muted-d); margin:2px 0 0; font-size:15px}
+.xp .line{margin:10px 0 0; font-size:16px; color:rgba(218,241,222,.82); max-width:70ch}
+.xp .go{white-space:nowrap; font-size:14px; padding:8px 14px; border-radius:99px; border:1px solid rgba(218,241,222,.22); transition:background .3s, color .3s}
+.xp button:hover .go{background:var(--leaf); color:var(--g900); border-color:var(--leaf)}
+@media (max-width:760px){ .xp button{grid-template-columns:1fr; gap:6px} .xp .go{justify-self:start; margin-top:8px} }
+
+/* skills */
+.skills{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin-top:56px}
+.skill{padding:24px; border-radius:22px; background:#fff; border:1px solid #DCEBDF}
+.skill h3{font-size:17px; font-weight:600; margin:0 0 8px; letter-spacing:-.01em}
+.skill p{margin:0; font-size:15px; color:var(--muted-l); line-height:1.55}
+.skill.wide{grid-column:span 2; background:var(--g800); border-color:var(--g800); color:var(--g100)}
+.skill.wide p{color:var(--muted-d)}
+.forms{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+.forms span{padding:6px 12px; border-radius:99px; background:rgba(218,241,222,.1); font-size:14px}
+@media (max-width:980px){ .skills{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:560px){ .skills{grid-template-columns:1fr} .skill.wide{grid-column:auto} }
+
+/* education */
+.edu{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:56px}
+.edu div{padding:26px; border-radius:22px; border:1px solid #DCEBDF; background:#fff}
+.edu .when{font-size:14px; color:var(--muted-l)}
+.edu h3{font-size:20px; font-weight:600; letter-spacing:-.01em; margin:8px 0 4px; line-height:1.25}
+.edu p{margin:0; color:var(--muted-l); font-size:15px}
+.edu .next{background:#E5F1E7; border-color:#CFE3D4}
+@media (max-width:860px){ .edu{grid-template-columns:1fr} }
+
+/* contact */
+.contact{padding:110px 0 70px}
+.contact-card{border-radius:36px; padding:56px; position:relative; overflow:hidden; isolation:isolate;
+  background:linear-gradient(135deg,var(--g700),var(--g800) 60%); border:1px solid var(--glass-line)}
+.contact-card::after{content:""; position:absolute; right:-140px; top:-160px; width:480px; height:480px; z-index:-1; border-radius:50%;
+  background:radial-gradient(closest-side, rgba(169,207,107,.22), transparent)}
+.contact-card h2{font-weight:300; font-size:clamp(34px,4.6vw,56px); letter-spacing:-.035em; line-height:1.05; margin:0; max-width:16ch}
+.contact-card h2 b{font-weight:600}
+.contact-list{display:flex; flex-wrap:wrap; gap:12px; margin-top:34px}
+.contact-list a,.contact-list span{display:inline-flex; align-items:center; height:48px; padding:0 22px; border-radius:99px; text-decoration:none;
+  border:1px solid rgba(218,241,222,.24); font-weight:500}
+.contact-list a:first-child{background:var(--leaf); color:var(--g900); border-color:var(--leaf)}
+.contact-list a:hover{border-color:var(--g100)}
+.contact-list span{color:var(--muted-d); border-style:dashed}
+footer{padding:0 0 40px; color:var(--muted-d); font-size:14px}
+footer .wrap{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap}
+@media (max-width:620px){ .contact-card{padding:36px 26px; border-radius:28px} }
+
+/* quiet section entrance */
+.js .reveal{opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s var(--ease)}
+.js .reveal.in{opacity:1; transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+  .js .reveal{opacity:1; transform:none}
+}
+@media print{
+  .nav,.hero::before,.hero::after,.filters,.legend,.more{display:none}
+  body,.light,.dark{background:#fff !important; color:#000}
+  .card.hide{display:flex}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">Mncedisi Mbhamali</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+    <a class="btn btn-ghost" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main id="main">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="kicker">Civil engineer, Mbabane, Eswatini</p>
+        <h1>Mncedisi <b>Mbhamali</b></h1>
+        <p class="hero-text">I supervise and administer water, irrigation and building contracts in Eswatini, from feasibility and design through construction to handover.</p>
+        <div class="hero-actions">
+          <a class="btn btn-leaf" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="mailto:siyambhamali99@gmail.com">Email me</a>
+        </div>
+      </div>
+
+      <div class="field" aria-label="Irrigation schemes supervised, by area">
+        <div class="ring" id="ring">
+          <svg viewBox="0 0 400 400" aria-hidden="true">
+            <circle cx="200" cy="200" r="176" fill="none" stroke="rgba(218,241,222,.08)" stroke-width="1"/>
+            <g id="segs"></g>
+          </svg>
+          <div class="ring-core">
+            <div class="big num" id="haTotal">1,669</div>
+            <div class="unit">hectares of irrigation supervised</div>
+          </div>
+        </div>
+        <!-- chips are filled from the project data -->
+        <p class="field-note">Select a scheme for details</p>
+      </div>
+    </div>
+
+    <div class="figures">
+      <div><strong class="num" data-count="13">13</strong><span>contracts supervised or administered at EWADE</span></div>
+      <div><strong class="num"><small class="pre">E</small><span data-count="297.6" data-dec="1">297.6</span></strong><span>million in combined contract value</span></div>
+      <div><strong class="num" data-count="10">10</strong><span>community earth dams taken through feasibility</span></div>
+      <div><strong class="num" data-count="4">4</strong><span>forms of contract: FIDIC 2017, FIDIC Bank Harmonised, GCC 2015, JBCC</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="light" id="about">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <h2 class="sec-title">Practical engineering, <b>start to handover</b></h2>
+      <div>
+        <p>I'm a civil engineer with a BSc (Hons) in Civil Engineering, specialising in water resource engineering and construction management.</p>
+        <p>At EWADE I work as Employer's Agent and Resident Engineer on earth dams, potable water, irrigation and resettlement housing, under FIDIC, GCC and JBCC contracts. That covers community engagement and feasibility, surveying and design, BOQs and tenders, cost control, payment certificates, variations and claims, site quality, testing and commissioning.</p>
+        <p>Most of my projects sit in rural communities, so I work as closely with chiefdoms and farmers as with contractors, consultants, funders and government departments.</p>
+        <div class="badges"><span>English</span><span>siSwati</span><span>AutoCAD</span><span>Civil 3D</span><span>SANS 1200</span><span>SANS 10400</span><span>ISO 9001 QMS</span></div>
+      </div>
+    </div>
+
+    <div id="projects" style="scroll-margin-top:24px">
+      <div class="proj-head reveal">
+        <div>
+          <h2 class="sec-title">Projects</h2>
+          <p class="sec-intro">Contracts I've supervised or administered, and design work I've delivered. Select a card for the scope and contract details.</p>
+        </div>
+        <div class="legend" aria-hidden="true">
+          <span><i style="background:var(--g700)"></i>Ongoing</span>
+          <span><i style="background:#fff; border:1px solid #CFE3D4"></i>Completed</span>
+        </div>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter projects" id="filters" style="margin-top:28px"></div>
+      <div class="org-filter" id="orgFilter"><span id="orgLabel"></span><button type="button" id="orgClear">Show all employers</button></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="experience">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="sec-title">Experience</h2>
+      <p class="sec-intro" style="color:var(--muted-d)">Select a role to see its projects.</p>
+    </div>
+    <div class="xp reveal" id="xp"></div>
+  </div>
+</section>
+
+<section class="light" id="skills">
+  <div class="wrap">
+    <h2 class="sec-title reveal">Skills</h2>
+    <div class="skills reveal">
+      <div class="skill wide">
+        <h3>Contract management</h3>
+        <p>Employer's Agent and Resident Engineer on contracts from under E1 million to over E106 million. Payment certificates, variations, claims and final accounts, with risk managed through Special Conditions of Contract.</p>
+        <div class="forms"><span>FIDIC 2017</span><span>FIDIC Bank Harmonised (2005)</span><span>GCC 2015</span><span>JBCC</span></div>
+      </div>
+      <div class="skill"><h3>Project management</h3><p>Planning, scheduling and coordination, budgeting and cost control, progress reporting, procurement and tenders.</p></div>
+      <div class="skill"><h3>Design and documentation</h3><p>Surveying, design and design review, engineer's estimates, BOQs, specifications and tender documents.</p></div>
+      <div class="skill"><h3>Supervision and quality</h3><p>Site inspections, contractor management and quality control to SANS 1200 and SANS 10400. ISO 9001 QMS.</p></div>
+      <div class="skill"><h3>Stakeholders</h3><p>Communities, chiefdoms, contractors, consultants, funders and government departments. Negotiating variations, claims and final accounts.</p></div>
+      <div class="skill"><h3>Health and safety</h3><p>Safe working environments and site safety compliance.</p></div>
+      <div class="skill"><h3>Software and languages</h3><p>AutoCAD, Civil 3D, MS Office. English and siSwati, both fluent.</p></div>
+    </div>
+
+    <h2 class="sec-title reveal" style="margin-top:96px">Education</h2>
+    <div class="edu reveal">
+      <div><span class="when">2019 to 2022</span><h3>BSc (Hons) Civil Engineering</h3><p>European University of Lefke, Cyprus. Water Resource Engineering and Construction Management, with Foundation Engineering, Transportation and Traffic Engineering, and Strategic Planning.</p></div>
+      <div><span class="when">2013 to 2017</span><h3>IGCSE</h3><p>Waterford Kamhlaba UWCSA, Mbabane.</p></div>
+      <div class="next"><span class="when">In progress</span><h3>Professional registration</h3><p>Working towards registration with AESAP/ECSA.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <h2>Have a water or irrigation project? <b>Let's talk.</b></h2>
+      <div class="contact-list">
+        <a href="mailto:siyambhamali99@gmail.com">siyambhamali99@gmail.com</a>
+        <a href="tel:+26878372731">+268 7837 2731</a>
+        <span>References available on request</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>Mncedisi Mbhamali</span><span>Mbabane, Eswatini</span></div></footer>
+
+<dialog id="dlg" aria-labelledby="dlgTitle"><div class="dlg" id="dlgBody"></div></dialog>
+
+<script>
+document.documentElement.classList.add('js');
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------------- data, from the master CV ---------------- */
+const CATS = { water:'Water and dams', irrigation:'Irrigation', buildings:'Buildings', design:'Design and feasibility' };
+const ORGS = {
+  ewade:'EWADE', ewadecs:'EWADE Commercial Services', afrotim:'Afrotim Construction', itml:'ITML Consulting Engineers'
+};
+const P = [
+  // Water and dams
+  {id:'emseleni', cat:'water', org:'ewade', name:'Emseleni Earthdam', role:"Employer's Agent", dates:'Jun 2026 to present', live:true, v:12551687.85, form:'GCC 2015',
+   scope:['Supervising construction of a new earth dam.','Administering the contract, including payment certificates and progress reporting.']},
+  {id:'mangcongco', cat:'water', org:'ewade', name:'Mangcongco Earthdam', role:"Employer's Agent", dates:'Jan 2026 to present', live:true, v:11004116.66, form:'GCC 2015',
+   scope:['Supervising construction and quality control to SANS 1200 and the project specifications.','Reviewing the design and developing design details on site as conditions require.']},
+  {id:'mahlabaneni', cat:'water', org:'ewade', name:'Mahlabaneni Potable Water Scheme', role:"Employer's Agent", dates:'Sep 2026 to present', live:true, v:5448312.15, form:null,
+   scope:['Overseeing rehabilitation of the Mahlabaneni potable water scheme.','Same contract covers construction of the Emseleni on-farm works.']},
+  {id:'ndzangu', cat:'water', org:'ewade', name:'Ndzangu Earthdam rehabilitation', role:"Employer's Agent", dates:'Sep 2025 to May 2026', live:false, v:2178421.43, form:'GCC 2015',
+   scope:['Construction supervision and contract administration through to completion.']},
+  {id:'spillways', cat:'water', org:'ewade', name:'Maplotini and Mgwenyane spillways', role:"Employer's Agent", dates:'Aug 2026 to present', live:true, v:975013.59, form:null,
+   scope:['Supervising spillway rehabilitation on two existing earth dams.']},
+  {id:'nkhaba', cat:'water', org:'afrotim', name:'Nkhaba Potable Water Scheme', role:'Site Technician', dates:'Jun 2021 to Aug 2021', live:false, v:null, metric:['2021',''],
+   scope:['Site surveys, set-outs and inspections on a community water supply scheme.','Prepared variation quotes and supported the site foreman.']},
+  // Irrigation
+  {id:'ofd560', cat:'irrigation', org:'ewade', name:'On-farm development, 560.3 ha', ha:560.3, role:'Assistant Resident Engineer, then Resident Engineer', dates:'Jun 2025 to Oct 2025', live:false, v:106067743.06, form:'FIDIC Bank Harmonised (2005)',
+   scope:['Supervised installation of the irrigation system.','Monitored construction quality, contractor performance and contract compliance.']},
+  {id:'ofd392', cat:'irrigation', org:'ewade', name:'On-farm development, 391.83 ha', ha:391.83, role:'Resident Engineer', dates:'Jun 2025 to present', live:true, v:30687342.34, form:'FIDIC Bank Harmonised (2005)',
+   scope:['Supervised land preparation and installation of the irrigation system.','Reviewed designs and monitored implementation against the approved design.','Oversaw testing and commissioning of the completed system.']},
+  {id:'ofd279', cat:'irrigation', org:'ewade', name:'On-farm development, 279.2 ha', ha:279.2, role:'Assistant Resident Engineer', dates:'Aug 2025 to Dec 2025', live:false, v:37574232.37, form:'FIDIC 2017',
+   scope:['Supervised installation of the irrigation system.','Administered the contract and oversaw testing and commissioning.']},
+  {id:'ofd224', cat:'irrigation', org:'ewade', name:'On-farm development, 223.8 ha', ha:223.8, role:'Assistant Resident Engineer', dates:'Jul 2025 to Dec 2025', live:false, v:38249837.44, form:'FIDIC Bank Harmonised (2005)',
+   scope:['Supervised installation of the irrigation system.','Maintained payment documentation and oversaw testing and commissioning.']},
+  {id:'ofd214', cat:'irrigation', org:'ewade', name:'On-farm development, 213.7 ha', ha:213.7, role:'Resident Engineer', dates:'Sep 2026 to present', live:true, v:33312343.47, form:'FIDIC Bank Harmonised (2005)',
+   scope:['Overseeing bush clearing, land preparation, and supply and installation of the irrigation system.','Monitoring quality, progress and contract compliance.']},
+  // Buildings
+  {id:'mnwap', cat:'buildings', org:'ewade', name:'MNWAP resettlement housing', role:"Employer's Agent", dates:'Apr 2026 to Oct 2026', live:false, v:9472507.47, form:'GCC 2015',
+   scope:['Construction supervision and contract administration for resettlement housing under the MNWAP project.']},
+  {id:'resettle', cat:'buildings', org:'ewade', name:'Resettlement housing', role:"Employer's Agent", dates:'Jan 2025 to present', live:true, v:6000000, form:'GCC 2015',
+   scope:['Managing quality compliance to SANS 10400 and the project specifications.','Processing payment certificates and managing the contract file.']},
+  {id:'packhouse', cat:'buildings', org:'ewade', name:'Fresh produce packhouse, Matsenjwa', role:"Employer's Agent Representative", dates:'Jun 2025 to Oct 2025', live:false, v:4095199.35, form:'GCC 2015',
+   scope:['Quality assurance, contract administration and interim payment certificates.','Led stakeholder engagement with the Matsenjwa community.']},
+  {id:'buhleni', cat:'buildings', org:'afrotim', name:'Buhleni Police Station and Royal Residence', role:'Site Agent', dates:'Oct 2023 to Jun 2025', live:false, v:null, metric:['2','sites'],
+   scope:['Managed day-to-day site activity, coordinating labour, plant and materials to meet programme targets.','Controlled quality and compliance with specifications, resolving site issues with the professional team.','Prepared progress reports, claims certificates and monthly profit-and-loss reports.']},
+  {id:'taitex', cat:'buildings', org:'afrotim', name:'Taitex factory shell rehabilitation', role:'Site Engineer', dates:'Mar 2023 to Oct 2023', live:false, v:null, metric:['2023',''],
+   scope:['Supervised construction against the design specifications and guided subcontractors and foremen.','Kept drawing registers, quality checklists and daily diaries.','Assisted with claims and final account settlement.']},
+  // Design and feasibility
+  {id:'feas', cat:'design', org:'ewadecs', name:'Community earth dam feasibility studies', role:'Project Engineer', dates:'Jul 2025 to present', live:true, v:null, metric:['10','dams'],
+   scope:['Grant-funding proposals and feasibility studies: community engagement, surveying, design and engineer’s estimates.','Earth dams: Makhosini, Mahhuku, Madadeni, Mgampondo, Msuzaneni, Ntululwane, Zenukeni, Dumenkhungwini, Ngudzeni and Loyiwe.','Also Dumenkhungwini Weir and Lomveshe water abstraction.']},
+  {id:'mgiveni', cat:'design', org:'ewadecs', name:'Mgiveni pump station and pipeline', role:'Project Engineer', dates:'Jul 2025 to present', live:false, v:null, metric:['2025',''],
+   scope:['Design of the pump station and conveyance pipeline.']},
+  {id:'tisuka', cat:'design', org:'ewadecs', name:'Tisuka solar pump station', role:'Project Engineer', dates:'Jul 2025 to present', live:false, v:null, metric:['120','ha'],
+   scope:['Design of a solar-powered pump station and conveyance for a 120 ha sugarcane farm.']},
+  {id:'matsanjeni', cat:'design', org:'ewadecs', name:'Matsanjeni Earthdam design', role:'Project Engineer', dates:'Jul 2025 to present', live:false, v:null, metric:['2025',''],
+   scope:['Design services for the Matsanjeni Earthdam.']},
+  {id:'maphalaleni', cat:'design', org:'ewadecs', name:'Maphalaleni Earthdam design review', role:'Project Engineer', dates:'Jul 2025 to present', live:false, v:null, metric:['2025',''],
+   scope:['Reviewed the Maphalaleni Earthdam design for the Department of Land Use Planning and Development.']},
+  {id:'training', cat:'design', org:'ewadecs', name:'EWADE Training Centre', role:'Project Engineer', dates:'Jul 2025 to present', live:false, v:null, metric:['2025',''],
+   scope:['Designed the EWADE Training Centre.']},
+  {id:'warehouse', cat:'design', org:'itml', name:'Warehouse BOQ and detailing', role:'Design Intern', dates:'Aug 2021 to Sep 2021', live:false, v:null, metric:['2021',''],
+   scope:['Prepared BOQs for a warehouse project.','Assisted with reinforcement detailing and carried out site inspections.']},
+];
+const XP = [
+  {org:'ewade', when:'2025 to present', title:'Graduate Engineer in Training', where:'Eswatini Water and Agricultural Development Enterprise (EWADE)',
+   line:"Employer's Agent and Resident Engineer on 13 contracts worth E297.6 million. On each one I lead technical and progress meetings, prepare correspondence and payment certificates, monitor spending against budget and track the programme."},
+  {org:'ewadecs', when:'2025 to present', title:'Project Engineer', where:'EWADE Commercial Services',
+   line:'Feasibility, design and supervision services: grant-funding proposals, dam and pump station design, tender documents and procurement.'},
+  {org:'afrotim', when:'2021 to 2025', title:'Site Agent, Site Engineer and Site Technician', where:'Afrotim Construction',
+   line:'Ran sites on the contractor side: programme, labour, plant and materials, quality, progress reports, claims and monthly profit-and-loss.'},
+  {org:'itml', when:'2021', title:'Design Intern', where:'ITML Consulting Engineers, Mbabane',
+   line:'BOQs, reinforcement detailing and site inspections on a warehouse project.'},
+];
+
+/* ---------------- helpers ---------------- */
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const money = v => 'E ' + v.toLocaleString('en-US',{minimumFractionDigits:2, maximumFractionDigits:2});
+const short = v => [(v/1e6).toFixed(v<1e6?2:1), 'million'];
+const plus = '<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1v12M1 7h12"/></svg>';
+
+/* ---------------- hectare ring ---------------- */
+const irr = P.filter(p=>p.ha);
+const ringCols = ['#A9CF6B','#8EB69B','#DAF1DE','#5E9A73','#C9E3A0'];
+const totalHa = irr.reduce((a,p)=>a+p.ha,0);
+document.getElementById('haTotal').textContent = Math.round(totalHa).toLocaleString('en-US');
+(function drawRing(){
+  const g = document.getElementById('segs'), cx=200, cy=200, r=160, gap=2.2;
+  let a0 = -90;
+  irr.forEach((p,i)=>{
+    const sweep = p.ha/totalHa*360 - gap;
+    const a1 = a0 + sweep;
+    const pt = a => [cx + r*Math.cos(a*Math.PI/180), cy + r*Math.sin(a*Math.PI/180)];
+    const [x0,y0]=pt(a0), [x1,y1]=pt(a1);
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    path.setAttribute('d',`M${x0.toFixed(2)} ${y0.toFixed(2)} A${r} ${r} 0 ${sweep>180?1:0} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`);
+    path.setAttribute('class','seg'); path.setAttribute('stroke', ringCols[i]); path.dataset.id = p.id;
+    g.appendChild(path);
+    if(!reduce){
+      const len = path.getTotalLength();
+      path.style.strokeDasharray = len; path.style.strokeDashoffset = len;
+      path.animate([{strokeDashoffset:len},{strokeDashoffset:0}],{duration:900, delay:350+i*180, easing:'cubic-bezier(.2,.7,.2,1)', fill:'forwards'});
+    }
+    a0 = a1 + gap;
+  });
+  // chips around the ring
+  const field = document.querySelector('.field'), note = field.querySelector('.field-note');
+  const order = ['ofd560','ofd392','ofd279','ofd224','ofd214'];
+  order.forEach((id,i)=>{
+    const p = P.find(x=>x.id===id), col = ringCols[irr.indexOf(p)];
+    const b = document.createElement('button');
+    b.type='button'; b.className='chip c'+(i+1); b.dataset.id=id;
+    b.innerHTML = `<div class="chip-top"><span>${p.live?'Ongoing':'Completed'}</span><i style="background:${col}"></i></div>
+      <div class="chip-v"><strong class="num">${p.ha.toLocaleString('en-US')}</strong><span>ha</span></div>
+      <div class="chip-s">E${short(p.v)[0]} million contract</div>`;
+    b.setAttribute('aria-label', `${p.name}, ${p.live?'ongoing':'completed'}. Show details`);
+    field.insertBefore(b, note);
+    if(!reduce) b.animate([{opacity:0, transform:'translateY(8px)'},{opacity:1, transform:'none'}],{duration:600, delay:900+i*140, easing:'ease-out', fill:'backwards'});
+  });
+  const ring = document.getElementById('ring');
+  field.addEventListener('pointerover', e=>{ const c=e.target.closest('.chip'); if(!c) return; hl(c.dataset.id); });
+  field.addEventListener('pointerout', e=>{ if(e.target.closest('.chip')) hl(null); });
+  field.addEventListener('focusin', e=>{ const c=e.target.closest('.chip'); if(c) hl(c.dataset.id); });
+  field.addEventListener('focusout', ()=>hl(null));
+  function hl(id){ ring.classList.toggle('dim', !!id); ring.querySelectorAll('.seg').forEach(s=>s.classList.toggle('on', s.dataset.id===id)); }
+})();
+
+/* ---------------- project grid ---------------- */
+const grid = document.getElementById('grid');
+const sorted = [...P].sort((a,b)=> (b.live-a.live) || ((b.v||0)-(a.v||0)));
+grid.innerHTML = sorted.map(p=>{
+  const [n,u] = p.v ? short(p.v) : p.metric;
+  return `<button type="button" class="card${p.live?' live':''}" data-id="${p.id}" data-cat="${p.cat}" data-org="${p.org}">
+    <div class="card-top"><span>${CATS[p.cat]}</span><span class="status">${p.live?'Ongoing':'Completed'}</span></div>
+    <div class="card-v">${p.v?'<span class="pre">E</span>':''}<strong class="num">${n}</strong><span>${u}</span></div>
+    <h3>${esc(p.name)}</h3>
+    <p class="role">${esc(p.role)}, ${esc(ORGS[p.org])}</p>
+    <span class="more">${plus}</span>
+  </button>`;
+}).join('');
+
+let cat = 'all', org = null;
+const filters = document.getElementById('filters');
+const counts = P.reduce((m,p)=>(m[p.cat]=(m[p.cat]||0)+1,m),{});
+filters.innerHTML = [['all','All',P.length],...Object.entries(CATS).map(([k,v])=>[k,v,counts[k]])]
+  .map(([k,l,c])=>`<button type="button" data-cat="${k}" aria-pressed="${k==='all'}">${l}<em>${c}</em></button>`).join('');
+filters.addEventListener('click', e=>{ const b=e.target.closest('button'); if(!b) return; cat=b.dataset.cat; apply(); });
+document.getElementById('orgClear').addEventListener('click', ()=>{ org=null; apply(); });
+
+function apply(){
+  filters.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.cat===cat));
+  const of = document.getElementById('orgFilter');
+  of.classList.toggle('show', !!org);
+  if (org) document.getElementById('orgLabel').textContent = 'Showing ' + ORGS[org] + ' projects';
+  let k = 0;
+  grid.querySelectorAll('.card').forEach(c=>{
+    const show = (cat==='all' || c.dataset.cat===cat) && (!org || c.dataset.org===org);
+    c.classList.toggle('hide', !show);
+    c.classList.remove('enter');
+    if (show && !reduce){ void c.offsetWidth; c.style.setProperty('--d', (Math.min(k,8)*0.04)+'s'); c.classList.add('enter'); k++; }
+  });
+}
+
+/* ---------------- dialog ---------------- */
+const dlg = document.getElementById('dlg'), body = document.getElementById('dlgBody');
+let current = null;
+function visibleIds(){ return [...grid.querySelectorAll('.card:not(.hide)')].map(c=>c.dataset.id); }
+function openP(id){
+  const p = P.find(x=>x.id===id); if(!p) return; current = id;
+  const ids = visibleIds().includes(id) ? visibleIds() : sorted.map(x=>x.id);
+  const i = ids.indexOf(id), prev = ids[(i-1+ids.length)%ids.length], next = ids[(i+1)%ids.length];
+  const facts = [];
+  if (p.v) facts.push(['Contract value', money(p.v), true]);
+  else if (p.metric && p.metric[1]) facts.push([p.metric[1]==='ha'?'Farm area':p.metric[1]==='dams'?'Earth dams':'Sites', p.metric[0]+(p.metric[1]==='ha'?' ha':''), true]);
+  if (p.ha) facts.push(['Area', p.ha.toLocaleString('en-US')+' ha']);
+  if (p.form) facts.push(['Form of contract', p.form]);
+  facts.push(['Dates', p.dates]);
+  body.innerHTML = `
+    <button type="button" class="dlg-close" aria-label="Close"><svg viewBox="0 0 14 14"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
+    <div class="dlg-top top-pad"><span>${CATS[p.cat]}</span><span class="status${p.live?' live':''}">${p.live?'Ongoing':'Completed'}</span></div>
+    <h2 id="dlgTitle">${esc(p.name)}</h2>
+    <p class="who">${esc(p.role)}, ${esc(ORGS[p.org])}</p>
+    <dl>${facts.map(([t,d,big])=>`<div><dt>${t}</dt><dd class="${big?'big num':''}">${esc(d)}</dd></div>`).join('')}</dl>
+    <ul>${p.scope.map(s=>`<li>${esc(s)}</li>`).join('')}</ul>
+    <div class="dlg-nav"><button type="button" data-go="${prev}">Previous project</button><button type="button" data-go="${next}">Next project</button></div>`;
+  if (!dlg.open) dlg.showModal();
+}
+document.addEventListener('click', e=>{
+  const t = e.target.closest('.card, .chip'); if (t){ openP(t.dataset.id); return; }
+});
+dlg.addEventListener('click', e=>{
+  if (e.target === dlg) { dlg.close(); return; }          // backdrop
+  if (e.target.closest('.dlg-close')) { dlg.close(); return; }
+  const go = e.target.closest('[data-go]'); if (go) openP(go.dataset.go);
+});
+dlg.addEventListener('keydown', e=>{
+  if (e.key==='ArrowRight') dlg.querySelector('[data-go]:last-child')?.click();
+  if (e.key==='ArrowLeft') dlg.querySelector('[data-go]:first-child')?.click();
+});
+dlg.addEventListener('close', ()=>{ const c = document.querySelector(`.card[data-id="${current}"]:not(.hide), .chip[data-id="${current}"]`); c?.focus({preventScroll:true}); });
+
+/* ---------------- experience ---------------- */
+const xp = document.getElementById('xp');
+xp.innerHTML = XP.map(x=>{
+  const n = P.filter(p=>p.org===x.org).length;
+  return `<button type="button" data-org="${x.org}">
+    <span class="when">${x.when}</span>
+    <span><h3>${esc(x.title)}</h3><p class="where">${esc(x.where)}</p><p class="line">${esc(x.line)}</p></span>
+    <span class="go">See ${n} project${n>1?'s':''}</span></button>`;
+}).join('');
+xp.addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  org = b.dataset.org; cat = 'all'; apply();
+  document.getElementById('projects').scrollIntoView({behavior: reduce?'auto':'smooth'});
+});
+
+/* ---------------- figures count-up ---------------- */
+if (!reduce){
+  document.querySelectorAll('[data-count]').forEach((el,i)=>{
+    const end = +el.dataset.count, dec = +(el.dataset.dec||0), t0 = performance.now()+600+i*90, dur=1400;
+    el.textContent = (0).toFixed(dec);
+    const step = now=>{ const t=Math.min(1,Math.max(0,(now-t0)/dur)), e=1-Math.pow(1-t,3);
+      el.textContent = (end*e).toFixed(dec); if(t<1) requestAnimationFrame(step); };
+    requestAnimationFrame(step);
+  });
+}
+
+/* ---------------- quiet reveals ---------------- */
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
